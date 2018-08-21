@@ -11,9 +11,9 @@ AppConfig = {
     s3ContentHost: "/assets/public/content/",
     previewPluginspath: "/content-plugins",
     devicePluginspath: "/widgets/content-plugins",
-    corePluginspath: 'coreplugins',
-    apislug: '/action',
-    telemetryEventsConfigFields: ['env', 'sid', 'uid', 'did', 'channel', 'etags', 'pdata', 'cdata', 'app', 'dims', 'partner', 'tags', 'rollup', 'mode', 'enableTelemetryValidation'],
+    corePluginspath: "coreplugins",
+    apislug: "/action",
+    telemetryEventsConfigFields: ["env", "sid", "uid", "did", "channel", "etags", "pdata", "cdata", "app", "dims", "partner", "tags", "rollup", "mode", "enableTelemetryValidation"],
     mimetypes: [
         "application/vnd.ekstep.ecml-archive", "application/vnd.ekstep.html-archive", "application/vnd.ekstep.h5p-archive", "application/epub", "video/mp4", "application/pdf", "video/x-youtube", "video/webm"
     ],
@@ -32,67 +32,67 @@ AppConfig = {
         "path": ""
     },
     contentLaunchers: [{
-            mimeType: ['application/vnd.ekstep.html-archive', 'application/vnd.ekstep.h5p-archive'],
-            id: 'org.ekstep.htmlrenderer',
+            mimeType: ["application/vnd.ekstep.html-archive", "application/vnd.ekstep.h5p-archive"],
+            id: "org.ekstep.htmlrenderer",
             ver: 1.0,
-            type: 'plugin'
+            type: "plugin"
         }, {
-            mimeType: ['application/vnd.ekstep.ecml-archive'],
-            id: 'org.ekstep.ecmlrenderer',
+            mimeType: ["application/vnd.ekstep.ecml-archive"],
+            id: "org.ekstep.ecmlrenderer",
             ver: 1.0,
-            type: 'plugin'
+            type: "plugin"
         },
         {
-            mimeType: ['application/epub'],
-            id: 'org.ekstep.epubrenderer',
+            mimeType: ["application/epub"],
+            id: "org.ekstep.epubrenderer",
             ver: 1.0,
-            type: 'plugin'
+            type: "plugin"
         },
         {
-            mimeType: ['video/mp4', 'video/x-youtube', 'video/webm'],
-            id: 'org.ekstep.videorenderer',
+            mimeType: ["video/mp4", "video/x-youtube", "video/webm"],
+            id: "org.ekstep.videorenderer",
             ver: 1.0,
-            type: 'plugin'
+            type: "plugin"
         },
         {
-            mimeType: ['application/pdf'],
-            id: 'org.ekstep.pdfrenderer',
+            mimeType: ["application/pdf"],
+            id: "org.ekstep.pdfrenderer",
             ver: 1.0,
-            type: 'plugin'
+            type: "plugin"
         },
         {
-            mimeType: ['text/x-url'],
-            id: 'org.ekstep.extcontentpreview',
+            mimeType: ["text/x-url"],
+            id: "org.ekstep.extcontentpreview",
             ver: 1.0,
-            type: 'plugin'
+            type: "plugin"
         }
 
     ],
-    assetbase: 'assets/icons/',
+    assetbase: "assets/icons/",
     defaultPlugins: [{
-        id: 'org.ekstep.launcher',
+        id: "org.ekstep.launcher",
         ver: 1.0,
-        type: 'plugin'
+        type: "plugin"
     }, {
-        id: 'org.ekstep.repo',
+        id: "org.ekstep.repo",
         ver: 1.0,
-        type: 'plugin'
+        type: "plugin"
     }, {
         id: "org.ekstep.telemetrysync",
         ver: 1.0,
-        type: 'plugin'
+        type: "plugin"
     }, {
         id: "org.ekstep.toaster",
         ver: 1.0,
-        type: 'plugin'
+        type: "plugin"
     }, {
         id: "org.ekstep.alert",
         ver: 1.0,
-        type: 'plugin'
+        type: "plugin"
     }, {
         id: "org.ekstep.userswitcher",
         ver: 1.0,
-        type: 'plugin'
+        type: "plugin"
     }],
     overlay: {
         enableUserSwitcher: true,
@@ -114,8 +114,8 @@ AppConfig = {
         webLink: "https://www.ekstep.in"
     },
     showEndPage: true,
-    env: 'contentplayer',
-    pdata: { 'id': 'in.ekstep', 'ver': '1.0', 'pid': 'contentplayer' },
+    env: "contentplayer",
+    pdata: { "id": "in.ekstep", "ver": "1.0", "pid": "contentplayer" },
     channel: "in.ekstep",
     etags: {
         app: [],

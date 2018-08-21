@@ -1,7 +1,10 @@
 org.ekstep.contentrenderer.IDispatcher = Class.extend({
     init: function() {
-        this.initDispatcher();
+        this.initDispatcher()
     },
-    initDispatcher: function() {throw 'Subclass should implement initDispatcher'},
-    dispatch: function(event) {throw 'Subclass should implement dispatch'}
-});
+    initDispatcher: function(obj) {
+        console.warn("Subclass should implement initDispatcher")
+        throw obj
+    },
+    dispatch: function(event) { throw event }
+})

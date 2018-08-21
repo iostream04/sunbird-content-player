@@ -33,11 +33,11 @@ exports.postCall = function(url, arguments, callback) {
 }
 
 function parseResponse(data, callback) {
-    if(typeof data == 'string') {
+    if (typeof data == 'string') {
         try {
             data = JSON.parse(data);
             callback(null, data);
-        } catch(err) {
+        } catch (err) {
             console.log('MWServiceProvider.parseResponse(). Err', err);
             callback(err);
         }
