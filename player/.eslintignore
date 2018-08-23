@@ -1,5 +1,6 @@
 
 public/libs/**
+public/js/basePlugin.js
 public/test/**
 public/fixture-stories
 public/example
